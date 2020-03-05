@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/open-iconic-master/font/css/open-iconic-bootstrap.css">
+        <title>Checkout Mirror Fashion</title>
+
+        <style>
+            .oi {
+                color: gold;
+                font-size: 300px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+
+        <h1 class="display-4">Ótima escolha!</h1>
+        <p class="lead">Obrigado por comprar na Mirror Fashion!
+            Preencha seus dados para efetivar a compra.</p>
+            
+            </div>
+        </div>
+
+        <div class="container">
+        <div class="card mb-3">
+            <div class="card-header">
+        <h2>Sua compra</h2>
+        </div>
+        
+
+        <div class="card-body">
+
+        <img src="mirrorfashion/img/produtos/foto1-verde.png" alt="Fuzzy Cardigan"
+        class="img-thumbnail mb-3">
+        <dl>
+            <dt>Produto</dt>
+            <dd>Fuzzy Cardigan</dd>
+
+            <dt>Cor</dt>
+            <dd>Verde</dd>
+
+            <dt>Tamanho</dt>
+            <dd>40</dd>
+
+            <dt>Preço</dt>
+            <dd>R$ 129.90</dd>
+        </dl>
+        </div>
+        </div>
+    </div>
+
+    <form action="/efetivar.html" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome">
+
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha">
+    
+        <input type="submit">
+        <br>
+
+        <input id="contrato" name="contrato" type="checkbox" value="sim">
+        <label for="contrato">Aceito os termos do contrato.</label>
+        <br>
+
+        <input type="radio" name="idade" id="idade5" value="5">
+        <label for="idade">Menos de 5 anos</label>
+
+        <input type="radio" name="idade" id="idade10" value="10">
+        <label for="idade">Menos de 10 anos</label>
+
+        <input type="radio" name="idade" id="idade15" value="15">
+        <label for="idade">Menos de 15 anos</label>
+
+        <input type="radio" name="idade" id="idade20" value="20">
+        <label for="idade">Menos de 20 anos</label>
+        <br>
+
+        <input type="image" name="botao" src="mirrorfashion/img/sacola.png"
+        alt="Botão para enviar o formulário" width="20" heigh="18">
+        <br>   
+
+        <input type="file" name="anexo">
+        <br>
+
+        <input type="hidden" name="codigo" value="abc012xyz789">
+        <br>
+
+        <input type="button" name="mostra_dialogo" value="Clique aqui!">
+        <br>
+
+        <input type="submit" name="enviar" value="Enviar">
+        <br>
+
+        <label for="info">Info teste:</label>
+        <input type="text" name="teste">
+        <input type="reset" name="reset" value="Limpar">
+        <br>
+
+        <textarea name="texto"></textarea>
+        <br>
+
+        <select name="cidades">
+            <option value="bsb">Brasília</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="sp">São Paulo</option>
+        </select>
+        <br>
+
+        <select name="cidades" multiple>
+            <option value="bsb">Brasília</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="sp">São Paulo</option>
+        </select>
+        <br>
+
+        <select name="bairro">
+            <optgroup label="Brasília">
+                <option value="asan_bsb">Asa Norte</option>
+                <option value="asas_bsb">Asa Sul</option>
+            </optgroup>
+            <optgroup label="Rio de Janeiro">
+                <option value="botafogo_rj">Botafogo</option>
+                <option value="centro_rj">Centro</option>
+            </optgroup>
+            <optgroup label="São Paulo">
+                <option value="vlmariana_sp">Vila Mariana</option>
+                <option value="centro_sp">Centro</option>
+            </optgroup>
+        </select>
+        <br>
+
+        <input type="email" name="email">
+        <br><br>
+
+        <input type="number" max="100" step="5">
+        <br><br>
+
+        <input type="url" name="endereco">
+        <br><br>
+
+        <input type="range" name="volume" min="10" max="100">
+        <br><br>
+
+        <input type="date" name="validade">
+        <br><br>
+
+        <input type="color" name="cor_olhos">
+        <br><br>
+
+        <input type="search" results="10">
+        <br><br>
+
+        <input type="tel" name="telefone">
+        <br><br>
+
+        <input type="text" name="nome" autofocus>
+        <br><br>
+
+        <input type="text" name="nome" placeholder="Insira seu nome aqui">
+        <br><br>
+
+        <input type="text" list="cidades" autocomplete="on">
+        <datalist id="cidades">
+            <option value="Brasília">
+            <option value="Rio de Janeiro">
+            <option value="São Paulo">
+        </datalist>
+        <br><br>
+        <input type="text" name="nome" required>
+        <button type="submit" name="nome">ENVIAR</button>
+        <br><br>
+
+        <input type="text" pattern="^@\w{2,}" name="usuario_twitter">
+    </form>
+
+    <span class="oi oi-thumb-up"></span>
+    </body>
+</html>

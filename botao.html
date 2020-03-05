@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            #cabecalho {
+                color: #000;
+                background-color: #F5F5F5;
+                padding: 10px;
+                width: 508px;
+                border: 1px solid #F0F0F0;
+                border-top-right-radius: 5px;
+                border-top-left-radius: 5px;
+                margin-bottom: 0;
+                margin-left: 2px;
+            }
+
+            fieldset {
+                width: 500px;
+                border: 1px solid #F0F0F0;
+                float: center;
+            }
+
+            #add {
+                margin-left: 385px;
+                margin-top: 10px;
+                font-size: 14px;
+                padding: 10px;
+                border-radius: 5px;
+                color: #FFFFFF;
+                background-color: #3978B9;
+            }
+
+            input {
+                width: 500px;
+                height: 30px;
+                border: 1px solid #AFAFAF;
+                border-radius: 3px;
+            }
+
+            p {
+                font-family: "Arial";
+                margin-bottom: 8px;
+            }
+
+            h1 {
+                font-family: "Arial";
+                text-align: center;
+            }
+
+            #insert {
+                font-size: 14px;
+                padding: 10px;
+                width: 70px;
+                border-radius: 5px;
+                color: #FFF;
+                background-color: #58B65F;
+                margin-top: 50px;
+                margin-left: 225px;
+            }
+
+            select {
+                width: 360px;
+                height: 35px;
+                border-radius: 3px;
+            }
+
+            #skills {
+                clear: right;
+                margin-top: 10px;
+            }
+
+            #remove1 {
+                color: #FFF;
+                font-size: 14px;
+                background-color: #D9564E;
+                border-radius: 5px;
+                padding: 10px;
+                margin-left: 40px;
+            }
+
+            #remove2 {
+                color: #FFF;
+                font-size: 14px;
+                background-color: #D9564E;
+                border-radius: 5px;
+                padding: 10px;
+                margin-left: 40px;
+            }
+
+            #remove3 {
+                color: #FFF;
+                font-size: 14px;
+                background-color: #D9564E;
+                border-radius: 5px;
+                padding: 10px;
+                margin-left: 40px;
+            }
+
+            section {
+                margin: auto;
+                width: 30%;
+            }
+
+        </style>
+        <title>Formulário 02</title>
+    </head>
+    <body>
+        <h1>Add Remove Dynamic HTML Fields using JQuery Plugin in PHP</h1>
+
+        <section id="formulario">
+        <form>
+      <p id="cabecalho">Add Programming Skill Details</p>
+            
+      <fieldset>
+      <p><strong>Enter Programmer Name</strong></p>
+      <input type="text">
+      <button id="add">Add More Skill</button>
+      </form>
+
+      <form id="skills">
+            <p><strong>Select Programming Skill</strong></p>
+            <select>
+                <option value="none">Select...</option>
+                <option value="PHP">PHP</option>
+                <option value="MySQL">MySQL</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="JQuery">JQuery</option>
+                <option value="Java">Java</option>
+            </select>
+            <button id="remove1">Remove</button>
+            <!--Aluno: Jonathan Florencio de Lima, T132, RC-->
+            <p><strong>Select Programming Skill</strong></p>
+            <select>
+                <option value="none">Select...</option>
+                <option value="PHP">PHP</option>
+                <option value="MySQL">MySQL</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="JQuery">JQuery</option>
+                <option value="Java">Java</option>
+            </select>
+            <button id="remove2">Remove</button>
+
+            <p><strong>Select Programming Skill</strong></p>
+            <select>
+                <option value="none">Select...</option>
+                <option value="PHP">PHP</option>
+                <option value="MySQL">MySQL</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="JQuery">JQuery</option>
+                <option value="Java">Java</option>
+            </select>
+            <button id="remove3">Remove</button>
+      </form>
+
+      <form>
+          <button id="insert">Insert</button>
+      </form>
+    </fieldset>
+    </section>
+    </body>
+</html>
